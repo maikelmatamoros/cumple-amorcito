@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz cumpleaños, amor</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Confetti container -->
+    <div id="confetti-container"></div>
+
+    <!-- Hero -->
+    <header class="hero">
+        <div class="hero-content">
+            <p class="subtitle">Hoy es un día especial porque nació alguien increíble</p>
+            <h1>Feliz cumpleaños, amor</h1>
+            <p class="date">9 de octubre</p>
+            <div class="hearts">
+                <span>💖</span>
+                <span>🎂</span>
+                <span>✨</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mensaje -->
+    <section class="message-section reveal">
+        <div class="card">
+            <h2>Para ti, con todo mi amor</h2>
+            <p class="message-text">
+                Hay personas que iluminan todo sin siquiera intentarlo. Tú eres una de ellas. Desde que estás en mi vida, los días comunes se sienten menos comunes y los momentos buenos se sienten perfectos.
+            </p>
+            <p class="message-text">
+                Hoy quiero que sepas que no celebro solo tu cumpleaños, sino todo lo que eres: tu forma de ver el mundo, tu ternura, tu fuerza, tu manera de hacerme sentir en casa. Te amo mucho, hoy y siempre.
+            </p>
+            <p class="signature">— Con amor, para ti</p>
+        </div>
+    </section>
+
+    <!-- Galería -->
+    <section class="gallery-section reveal">
+        <h2>Nuestros momentos</h2>
+        <div class="gallery">
+            <div class="photo"><img src="fotos/foto1.jpg" alt="Momento 1" onerror="this.src='https://via.placeholder.com/400x400/ffb7b2/ffffff?text=Foto+1'"></div>
+            <div class="photo"><img src="fotos/foto2.jpg" alt="Momento 2" onerror="this.src='https://via.placeholder.com/400x400/ff9aa2/ffffff?text=Foto+2'"></div>
+            <div class="photo"><img src="fotos/foto3.jpg" alt="Momento 3" onerror="this.src='https://via.placeholder.com/400x400/ffdac1/ffffff?text=Foto+3'"></div>
+            <div class="photo"><img src="fotos/foto4.jpg" alt="Momento 4" onerror="this.src='https://via.placeholder.com/400x400/e2f0cb/ffffff?text=Foto+4'"></div>
+            <div class="photo"><img src="fotos/foto5.jpg" alt="Momento 5" onerror="this.src='https://via.placeholder.com/400x400/b5ead7/ffffff?text=Foto+5'"></div>
+            <div class="photo"><img src="fotos/foto6.jpg" alt="Momento 6" onerror="this.src='https://via.placeholder.com/400x400/c7ceea/ffffff?text=Foto+6'"></div>
+            <div class="photo"><img src="fotos/foto7.jpg" alt="Momento 7" onerror="this.src='https://via.placeholder.com/400x400/c7ceea/ffffff?text=Foto+6'"></div>
+            <div class="photo"><img src="fotos/foto8.jpg" alt="Momento 8" onerror="this.src='https://via.placeholder.com/400x400/c7ceea/ffffff?text=Foto+6'"></div>
+        </div>
+    </section>
+
+    <!-- Cupones sorpresa -->
+    <section class="coupons-section reveal">
+        <h2>Tus cupones de cumpleaños</h2>
+        <p class="coupons-hint">Tocá cada uno para descubrir tu premio</p>
+        <div class="coupons-grid">
+            <div class="coupon" data-coupon="cena">
+                <div class="coupon-inner">
+                    <div class="coupon-front">
+                        <span class="coupon-emoji">🍽️</span>
+                        <p class="coupon-title">Cupón sorpresa</p>
+                        <p class="coupon-tap">Tocá para abrir</p>
+                    </div>
+                    <div class="coupon-back">
+                        <h3>Cena a elección</h3>
+                        <p>Válido por una cena elegida por ti. La cocino, la pido, vamos o te la llevo donde quieras.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="coupon" data-coupon="pelicula">
+                <div class="coupon-inner">
+                    <div class="coupon-front">
+                        <span class="coupon-emoji">🎬</span>
+                        <p class="coupon-title">Cupón sorpresa</p>
+                        <p class="coupon-tap">Tocá para abrir</p>
+                    </div>
+                    <div class="coupon-back">
+                        <h3>Cita de películas</h3>
+                        <p>Válido para ir a ver una película, la que tu quieras cuando quieras.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="coupon coupon-golden" data-coupon="deseo">
+                <div class="coupon-inner">
+                    <div class="coupon-front">
+                        <span class="coupon-emoji">✨</span>
+                        <p class="coupon-title">Cupón dorado</p>
+                        <p class="coupon-tap">Tocá para abrir</p>
+                    </div>
+                    <div class="coupon-back">
+                        <h3>Lo que quieras</h3>
+                        <p>Este cupón es especial. Pídime lo que quieras y haré todo lo posible por cumplirlo.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sorpresa final -->
+    <section class="final-section reveal">
+        <div class="final-card">
+            <h2>Lo mejor de tenerte</h2>
+            <p class="poem">
+                En cada sonrisa tuya encuentro mi lugar,<br>
+                en cada abrazo, el mundo deja de girar.<br>
+                Gracias por existir, por ser así,<br>
+                hoy y siempre, te elijo a ti.
+            </p>
+            <p class="final-wish">🎉 ¡Que este día esté lleno de amor y momentos hermosos! 🎉</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>Hecho con 💖 para ti</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
