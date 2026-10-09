@@ -23,8 +23,9 @@ function createConfetti() {
 }
 
 // Lanzar confetti al cargar y cada cierto tiempo
+// DESACTIVADO PARA DIAGNÓSTICO DE SCROLL EN MÓVIL
 createConfetti();
-setInterval(createConfetti, 6000);
+// setInterval(createConfetti, 6000);
 
 // Revelar secciones al hacer scroll
 const revealElements = document.querySelectorAll('.reveal');
@@ -78,4 +79,5 @@ function createFloatingHeart() {
     }, 8000);
 }
 
-setInterval(createFloatingHeart, 2000);
+// DESACTIVADO PARA DIAGNÓSTICO DE SCROLL EN MÓVIL
+// setInterval(createFloatingHeart, 2000);
