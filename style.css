@@ -17,20 +17,20 @@
 }
 
 html {
-    scroll-behavior: smooth;
+    scroll-behavior: auto;
+    overscroll-behavior-y: none;
 }
 
 body {
     font-family: 'Poppins', sans-serif;
     background: linear-gradient(135deg, var(--rosa-suave) 0%, var(--champagne) 100%);
     color: var(--texto);
-    overflow-x: hidden;
-    min-height: 100vh;
 }
 
 /* Hero */
 .hero {
     min-height: 100vh;
+    min-height: 100svh;
     display: flex;
     align-items: center;
     justify-content: center;
