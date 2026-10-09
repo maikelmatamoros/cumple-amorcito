@@ -1,4 +1,36 @@
-// Confetti: se crea una sola vez con animaciones infinitas
+// Revelar secciones al hacer scroll usando IntersectionObserver (más eficiente en móvil)
+const revealElements = document.querySelectorAll('.reveal');
+
+const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            revealObserver.unobserve(entry.target);
+        }
+    });
+}, {
+    threshold: 0.1,
+    rootMargin: '0px 0px -50px 0px'
+});
+
+revealElements.forEach((element) => {
+    revealObserver.observe(element);
+});
+
+// Cupones: al hacer clic se dan vuelta
+const coupons = document.querySelectorAll('.coupon');
+
+coupons.forEach(coupon => {
+    coupon.addEventListener('click', () => {
+        coupon.classList.toggle('flipped');
+    });
+});
+
+/*
+// Confetti y corazones flotantes desactivados temporalmente para diagnosticar scroll en móvil.
+// Si el scroll se arregla sin ellos, el problema son las capas fixed/animadas.
+// Luego se puede reactivar con una implementación más ligera.
+
 function createConfetti() {
     const container = document.getElementById('confetti-container');
     const colors = ['#ff6f91', '#ffb7b2', '#ff9aa2', '#ffdac1', '#e2f0cb', '#b5ead7', '#c7ceea', '#d4a373'];
@@ -19,34 +51,6 @@ function createConfetti() {
 
 createConfetti();
 
-// Revelar secciones al hacer scroll
-const revealElements = document.querySelectorAll('.reveal');
-
-const revealOnScroll = () => {
-    const windowHeight = window.innerHeight;
-    const elementVisible = 100;
-
-    revealElements.forEach((element) => {
-        const elementTop = element.getBoundingClientRect().top;
-        if (elementTop < windowHeight - elementVisible) {
-            element.classList.add('visible');
-        }
-    });
-};
-
-window.addEventListener('scroll', revealOnScroll);
-window.addEventListener('load', revealOnScroll);
-
-// Cupones: al hacer clic se dan vuelta
-const coupons = document.querySelectorAll('.coupon');
-
-coupons.forEach(coupon => {
-    coupon.addEventListener('click', () => {
-        coupon.classList.toggle('flipped');
-    });
-});
-
-// Corazones flotantes de fondo: se crean una sola vez con animaciones infinitas
 function createFloatingHearts() {
     const container = document.getElementById('hearts-container');
     const heartCount = 6;
@@ -65,3 +69,4 @@ function createFloatingHearts() {
 }
 
 createFloatingHearts();
+*/
