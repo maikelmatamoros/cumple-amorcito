@@ -223,6 +223,7 @@ h2 {
     padding: 25px;
     text-align: center;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
 }
 
 .coupon-front {
